@@ -27,7 +27,7 @@ class AndroidWebView implements WebViewPlatform {
     Set<Factory<OneSequenceGestureRecognizer>>? gestureRecognizers,
   }) {
     assert(webViewPlatformCallbacksHandler != null);
-    AndroidView(
+    return AndroidView(
       viewType: 'plugins.flutter.io/webview',
       onPlatformViewCreated: (int id) {
         if (onWebViewPlatformCreated == null) {
